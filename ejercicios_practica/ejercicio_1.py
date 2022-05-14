@@ -37,4 +37,22 @@ if __name__ == '__main__':
 
     # numeros_potencia = list(map....)
 
+    # Desarrollo de 1) ***************************
+    
+    potencia_2 = lambda x: x**2
+    pot_3 = potencia_2(3)
+
+    print('El número 3 elevado al cuadrado es:',pot_3)
+
+    # Desarrollo de 2) ***************************
+
+    numeros_map = map(potencia_2, numeros)
+    numeros_map = list(numeros_map)
+
+    print(numeros_map)
+    
+    numeros_lambda = list(map(lambda x: x**2, numeros))
+
+    print(numeros_lambda)
+
     print("terminamos")

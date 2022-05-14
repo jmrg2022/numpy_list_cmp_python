@@ -56,11 +56,21 @@ if __name__ == '__main__':
                 1264: 'Bicicleta',
                 905045: 'Computadora',
                 }
-
+    
     lista_compra_id = [556070, 905045, 42135, 5674, 704060, 1264, 42135, 3654]
 
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
 
+    id_compra = lambda x: producto.get(x,'NaN')
+    
+    #No_encontrado = producto.get(5674,'No Encontrado')
 
+    #print(No_encontrado)
+
+    #lista_compra_productos = [id_compra(x) for x in lista_compra_id if x in producto]
+    lista_compra_productos = [id_compra(x) for x in lista_compra_id]
+        
+    print(lista_compra_productos)
+    
     print("terminamos")

@@ -42,4 +42,18 @@ if __name__ == '__main__':
 
     # personal_valido = [.....]
 
+    # Desarrollo de 1) ***************************
+
+    personal_1_10 = [x for x in accesos if(x <= 10)]
+
+    print('Personal del 1 al 10',personal_1_10)
+    
+    print('La cantidad de personal con cuenta menor o igual a 10 que pasó por el molinete es:',len(personal_1_10))
+
+    # Desarrollo de 2) ***************************
+
+    personal_valido = [x for x in accesos if(x in id_validos)]
+
+    print('Personal con acceso válido:',personal_valido)
+
     print("terminamos")

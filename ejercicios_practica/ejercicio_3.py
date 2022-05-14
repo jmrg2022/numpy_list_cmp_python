@@ -8,6 +8,8 @@
 # que aparecen en verde con el hashtag "#"
 
 # Ejercicios con comprensión de listas
+from random import random
+import random
 
 
 if __name__ == '__main__':
@@ -44,5 +46,23 @@ if __name__ == '__main__':
     # https://docs.python.org/3/library/random.html
 
     # dias_mes = [.....]
+
+    # Desarrollo de 1) ***************************
+
+    lista_0_10 = [x for x in range(11)]
+
+    print(lista_0_10)
+
+    # Desarrollo de 2) ***************************
+
+    tabla_5 = [x*5 for x in range(11)]
+
+    print(tabla_5)
+
+    # Desarrollo de 3) ***************************
+
+    dias_mes = [random.randint(1, 30) for x in range(10)]
+
+    print(dias_mes)
 
     print("terminamos")

@@ -45,4 +45,10 @@ if __name__ == '__main__':
     # Se espera obtener:
     # ['Tamara', 'Juan', 'Alberto'......]
 
+    primera_letra = lambda x: x[0]
+    
+    nombres_filtrados = [x for x in nombres if(primera_letra(x) in padron)]
+
+    print('Nombres Filtrados:',nombres_filtrados)
+
     print("terminamos")
